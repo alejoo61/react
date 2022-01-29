@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+
+
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(360deg, rgba(2,0,36,1) 55%, rgba(19,73,96,1) 100%, rgba(9,30,51,1) 100%);
+background-repeat:no-repeat ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+nav{
+    background-color: #257488;
+    background-size: 100%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    color: #BCDFFE;
 }
+ 
+h1, p, h2{
+    font-family: 'Barlow', sans-serif;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.mercado{
+    background-image: url(/public/img/wildisland.gif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    }

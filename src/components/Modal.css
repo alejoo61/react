@@ -1,0 +1,8 @@
+.modal1{
+    background: tomato;
+    display: none;
+}
+
+.modal1-open{
+    display: flex;
+}
