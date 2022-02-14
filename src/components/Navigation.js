@@ -1,10 +1,15 @@
 
 import {Link} from 'react-router-dom'
 import React, { Component } from 'react'
+import Home from './Home';
+import Market from './Market';
 
-export default class Navigation extends Component {
-    render() {
+const Navigation = () => {
+    
+   
+
         return (
+            <>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <Link className="navbar-brand" to="https://wildislandnft.com/">
@@ -26,13 +31,17 @@ export default class Navigation extends Component {
                             <li className="nav-item me-2" id='madera'>
                                 <Link className="nav-link h3 text-white" to="/beast" > <img src='/img/beast.png' width="200"  /></Link>
                             </li>
-                            <li class="nav-item" id='madera'>
-                                <Link className="nav-link h3 text-white"  to="/market" ><img src='/img/market.png' width="200"  /></Link>
+                            <li className="nav-item" id='madera'>
+                                <Link className="nav-link h3 text-white"  to="/Market" ><img src='' width="200"  /> market </Link>
+                                
                             </li>
-                        </ul>
-                    </div>
+                           </ul>
+                     </div>
                 </div>
             </nav>
+            </>
+            
         )
     }
-}
+
+export default Navigation; 

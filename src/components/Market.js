@@ -1,35 +1,29 @@
 import React, { Component } from 'react'
 
-export default class Market extends Component {
-    render() {
+const Market = ({coins = []}) => {
+    
+    function priceWild(item){
+        return Math.trunc(1 / item.current_price);
+    }
+
         return (
-            <div className="mercado">
+            <div className="tex-white">
                 <div className=''>
-                    <h1 className='text-Black display-1 fw-bold mt-2 mx-5 mb-2'>Seguimos Trabajando... </h1>
+                {coins.map((item, index) => (
+                <div key={index}>
+                    <p className='text-white'>
+                        Smash: {priceWild(item)} WILD
+                    </p>
                 </div>
 
-               
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               <br /><br /><br /> <br />
-               
-               
-               <div className="footer-copyright text-dark text-center py-3">
-                   
-                        &copy; {new Date().getFullYear()} Copyright: <a href="https://wildislandnft.com/" className='link-dark'> WildIsland Game </a>
-                   
+       ))}
                 </div>
+                   
                
             </div>
 
 
         )
-    }
+   
 }
+export default Market;
